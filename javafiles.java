@@ -53,7 +53,8 @@ public class javabasics{
     float 4 bytes [7 dec points]
     double 8 bytes [more than 7 dec points]
 -------------------------------------------------------------------------------
-    //SUM OF TWO NUMBERS
+//SUM OF TWO NUMBERS
+    
 public class javabasics {
     public static void main(String args[]) {
         int a = 10;
@@ -64,7 +65,7 @@ public class javabasics {
 }
 
 ------------------------------------------------------------
-//Next()
+//next()
     
 import java.util.*;
 
@@ -76,7 +77,7 @@ public class javabasics{
     }
 }
 ................................................
-//Nextline()
+//nextline()
 
 import java.util.*;
 
@@ -88,4 +89,46 @@ public class javabasics{
     }
 } 
 ----------------------------------------------
+//nextInt()
     
+import java.util.*;
+
+public class javabasics{
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next();
+        System.out.println(input);
+    }
+}
+----------------------------------------------------
+//nextFloat()
+
+import java.util.*;
+
+public class javabasics{
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextFloat();
+        System.out.println(input);
+    }
+}
+------------------------------------------------------
+    nextDouble()
+    nextBoolean()
+    nextShort()
+    nextLong()
+-----------------------------------------------------
+//Sum of two number using input function 
+    
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int sum = a + b;
+        System.out.println(sum);
+    }
+}
+-----------------------------------------------------
