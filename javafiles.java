@@ -18,7 +18,7 @@ public class javabasics {
     }
 }
 
-----------------------------------------------------------------------------
+======================================================================================
 //DATA TYPES
     
 public class javabasics{
@@ -40,7 +40,7 @@ public class javabasics{
     }
 }
 
-----------------------------------------------------------------
+======================================================================================
     1 byte = 8 bits
     1 bit = [0, 1] 
     
@@ -52,7 +52,7 @@ public class javabasics{
     long 8 bytes [-9 billion - 9B]
     float 4 bytes [7 dec points]
     double 8 bytes [more than 7 dec points]
--------------------------------------------------------------------------------
+======================================================================================
 //SUM OF TWO NUMBERS
     
 public class javabasics {
@@ -64,7 +64,7 @@ public class javabasics {
     }
 }
 
-------------------------------------------------------------
+======================================================================================
 //next()
     
 import java.util.*;
@@ -76,7 +76,7 @@ public class javabasics{
         System.out.println(input);
     }
 }
-................................................
+======================================================================================
 //nextline()
 
 import java.util.*;
@@ -88,7 +88,7 @@ public class javabasics{
         System.out.println(input);
     }
 } 
-----------------------------------------------
+======================================================================================
 //nextInt()
     
 import java.util.*;
@@ -100,7 +100,7 @@ public class javabasics{
         System.out.println(input);
     }
 }
-----------------------------------------------------
+======================================================================================
 //nextFloat()
 
 import java.util.*;
@@ -112,12 +112,12 @@ public class javabasics{
         System.out.println(input);
     }
 }
-------------------------------------------------------
+======================================================================================
     nextDouble()
     nextBoolean()
     nextShort()
     nextLong()
------------------------------------------------------
+======================================================================================
 //Sum of two number using input function 
     
 import java.util.*;
@@ -131,4 +131,235 @@ public class javabasics {
         System.out.println(sum);
     }
 }
------------------------------------------------------
+======================================================================================
+//Product of two numbers
+
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int product = a * b;
+        System.out.println(product);
+    }
+}   
+======================================================================================
+// Area of a circle
+
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        float rad = sc.nextFloat();
+        float area = 3.14f * rad * rad;
+        System.out.println(area);
+
+    }
+} 
+//note : 3.14f - here f is written bcz java takes decimals as a double, to make it
+// float we give f here
+======================================================================================
+    //Possibiltiy of type conversion
+    
+byte -> short -> int -> float -> long -> double
+ reverse is not possible due to compatibility issue
+
+======================================================================================
+    //TYPE CONVERSION = WIDENING CONVERSION
+
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        int a = 25;
+        long b = a;
+        System.out.println(b);
+    }
+}            //possible
+-------------------------------------------------------
+  import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        long a = 25;
+        int b = a;
+        System.out.println(b);
+    }
+}    //reverse is not possible
+
+======================================================================================
+    //lossy conversion not possible
+    
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextFloat();
+        System.out.println(number);
+    }      //we cant assign float in int but reverse is possible
+}
+------------------------------------------
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        float number = sc.nextInt();
+        System.out.println(number);
+    }
+}      //revserse from int to float assignment is possible
+
+======================================================================================
+    //TYPE CASTING = NARROWING CONVERSION = explicit conversion
+
+    //convertinig float into int
+
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+         Scanner sc = new Scanner(System.in);
+        float number = 99.9f;
+        int newNum = (int) number;
+        System.out.println(newNum);
+    }
+   
+}
+-----------------------------------------------------------------
+    //converting char into int
+
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        char ch = 'a';
+        char ch2 = 'b';
+        int number = ch;
+        int number2 = ch2;
+        System.out.println(number);
+        System.out.println(number2);
+    }
+}
+=============================================================================================    
+//TYPE PROMOTION
+
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        char a = 'a';
+        char b = 'b';
+        System.out.println((int) a);    //TYPE CONVERSION
+        System.out.println((int) b);   //type conversion
+        System.out.println(a);   //prints a bcz no conversion done
+        System.out.println(b-a);
+    }
+}
+----------------------------------------------------------------------    
+    //It take a, b as int , and throws error c is char
+    
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        char a = 'a';
+        char b = 'b';
+        char c = a - b;      
+    }
+}   
+-------------------------------------------------------------------
+    // int to byte convs not possible
+
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        short a = 5;
+        byte b = 25;
+        char c = 'c';
+        byte bt = a + b + c ;
+    }          //converts all types into int automatically
+}
+-----------------------------------------------------------------------------------
+// Type converion to byte from int , and type promotion from all to int
+
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        short a = 5;
+        byte b = 25;
+        char c = 'c';
+        byte bt = (byte) (a + b + c) ;
+        System.out.println(bt);
+    }          //converts all types into int automatically
+}                 //prints -127
+====================================================================================================================
+    //TYPE PROMOTION FROM INT, FLOAT, LONG, DOUBLE
+
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String[] args) {
+        int a = 10;
+        float b = 20.25f;
+        long c = 25;
+        double d = 30;
+        double ans = a + b + c + d;
+        System.out.println(ans);
+    }
+}
+
+-------------------------------------------------------------------
+// automatically taken INT to Byte conversion
+    
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String[] args) {
+        byte b = 5;
+        b = (byte) (b * 2);
+        System.out.println(b);
+    }
+}
+======================================================================================
+jdk - java development kit
+jre - java run-time environment
+jvm - java virtual machine
+jvm + libraries = jre
+jre + development tools = jdk
+==============================================================================================
+Source Code.java -> Compiler -> Byte Code.class -> Java Virtual Machine -> Native Code
+ -----------------------------------------        -------------------------------
+    
+           Compilation                                      Execution
+        
+=========================================================================================================
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
