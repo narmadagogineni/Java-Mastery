@@ -563,8 +563,59 @@ public class javabasics {
 }
 
 =====================================================================
+//if - else block
+    
+import java.util.*;
 
+public class javabasics {
+
+    public static void main(String args[]) {
+       int a = 20;
+       int b = 8;
+       if(a>=b) {
+            System.err.println("a is greater");
+       } else {
+        System.out.println("b is greater");
+       }
+    }
+}
+-----------------------------------------------------
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+
+        if(number%2 == 0) {
+            System.err.println("Even");
+        } else {
+            System.out.println("Odd");
+        }
+    }
+}
+--------------------------------------------------------
+import java.util.*;
+
+public class javabasics {
+    public static void main(String args[]) {
+        int age = 15;
+
+        if(age >= 18) {
+            System.out.println("Adult");
+        } else if(age > 13 && age < 18) {
+            System.out.println("Teenager");
+        } else {
+            System.out.println("Child");
+        }
+    }
+    
+}
+----------------------------------------------------------
   
+
+    
 
 
 
