@@ -344,7 +344,9 @@ Source Code.java -> Compiler -> Byte Code.class -> Java Virtual Machine -> Nativ
         
 =========================================================================================================
  //OPERATORS   
-
+arithematic operator -, +, *, /, %
+----------------------------------------
+    
 import java.util.*;
 
 public class javabasics {
@@ -359,20 +361,216 @@ public class javabasics {
         System.out.println("Mod=" + (a%b));
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+==========================================================================================================
+    //PRE INCREMENT
+unary operator  ++, --
+------------------------------------
     
+//NOTE : in PRE both values remain same after updating, in POST both are different after updating
     
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int a = 10;
+        int b = ++a;
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+
+------------------------------------------------------
+    //POST INCREMENT
+
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int a = 10;
+        int b = a++;
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+
+--------------------------------------------------------
+    //PRE DECRIMENT
+
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int a = 10;
+        int b = --a;
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+--------------------------------------------------------
+    //POST DECREMENT
+
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int a = 10;
+        int b = a--;
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+============================================================
+//Realational operator
+==, !=, <, >, <=, >=
+--------------------------------    
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int a = 10;
+        int b = 5;
+        System.out.println(a==b);
+    
+    }
+}
+====================================================================
+//Logical operators
+
+logical AND - &&
+logical OR - ||
+logical NOT - !
+--------------------------------------------------
+//LOGICAL AND &&
+
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        System.out.println((3>2) && (11>2));
+        System.out.println((3<2) && (11>2));
+        System.out.println((3>2) && (11<2));
+        System.out.println((3<2) && (11<2));
+    }
+}
+ --------------------------------------------------
+     //LOGICAL OR ||
+
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        System.out.println((3>2) || (11>2));
+        System.out.println((3<2) || (11>2));
+        System.out.println((3>2) || (11<2));
+        System.out.println((3<2) || (11<2));
+    }
+}
+----------------------------------------------------------
+    //LOGICAL NOT !
+
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        System.out.println(!(3>2));
+        System.out.println(!(3<2));
+    }
+}
+=============================================================================
+//Assignment operator
++= operator
+    
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int a = 10;
+        // a = a + 5;
+        a += 5;
+        System.out.println(a);
+    }
+}
+
+--------------------------------------------------
+    //Assignment operator
+-= operator
+    
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int a = 10;
+        // a = a - 5;
+        a -= 5;
+        System.out.println(a);
+    }
+}
+-----------------------------------------------------------
+
+//Assignment operator
+*= operator
+    
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int a = 10;
+        // a = a * 5;
+        a *= 5;
+        System.out.println(a);
+    }
+}
+----------------------------------------------------------
+//Assignment operator
+/= operator
+    
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int a = 10;
+        // a = a / 5;
+        a /= 5;
+        System.out.println(a);
+    }
+}
+------------------------------------------------------
+    //Assignment operator
+%= operator
+    
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int a = 10;
+        // a = a % 5;
+        a %= 5;
+        System.out.println(a);
+    }
+}
+
+=====================================================================
+
+  
+
+
+
+
+
+
+
+
+
