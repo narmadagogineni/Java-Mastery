@@ -613,15 +613,160 @@ public class javabasics {
     
 }
 ----------------------------------------------------------
-  
-
+  //TAX CALCULATOR
     
+import java.util.*;
 
+public class javabasics {
 
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int income = sc.nextInt();
+        int tax;
 
+        if(income < 500000) {
+            tax = 0;
+        }
+        else if(income >= 500000 && income < 1000000) {
+            tax = (int) (income * 0.2);
+        } else {
+            tax = (int) (income * 0.3);
+        }
+        System.out.println("Your tax is " + tax);
+    }
+}
+----------------------------------------------------------------------------   
+//GREATEST OF 3 NUMBERS
+    
+import java.util.*;
 
+public class javabasics {
 
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
 
+        if((a >= b) && (a >= c)) {
+            System.out.println("a is greater " + a);
+        } else if (b >= c) {
+            System.out.println("b is greater " + b);
+        } else {
+            System.out.println("c is greater " + c);
+        }
+    }
+}
+=============================================================================================
+    //TERNARY OPERATORS
+
+    //larger number
+
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+
+        int largerNum = (10 > 6) ? 10 : 6;
+        System.out.println(largerNum); 
+        }
+}
+-------------------------------------------------------------------
+    //even or odd
+    
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int Number = 16;
+
+        String type = (Number % 2 == 0) ? ("even") : ("odd");
+        System.out.println(type);
+        }
+}
+-------------------------------------------------------------------
+    //pass or fail
+
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int marks = 98;
+
+        String result = (marks >= 33) ? ("Pass") : ("Fail");
+        System.out.println(result);
+        }
+}
+===================================================================================
+    //SWITCH STATEMENT
+
+    import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        int OrderNo = 4;
+
+        switch (OrderNo) {
+            case 1: 
+                System.out.println("Samosa");
+                break;
+            case 2:
+                System.out.println("Momos");
+                break;
+            case 3:
+                System.out.println("Rolls");
+                break;
+            case 4:
+                System.out.println("Maggi");     
+            default:
+                break;
+        }
+    }
+}
+------------------------------------------------------------------------------
+//Calculator using Switch
+
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter value for a");
+        int a = sc.nextInt();
+        System.out.println("Enter value for b");
+        int b = sc.nextInt();
+        System.out.println("Enter any operator");
+        char operator = sc.next().charAt(0);
+
+        switch (operator) {
+            case '+' :
+                System.out.println(a+b);
+                break;
+            case '-':
+                System.out.println(a-b);
+                break;
+            case '*':
+                System.out.println(a*b);
+                break;
+            case '/':
+                System.out.println(a/b);
+                break;
+            case '%':
+                System.out.println(a%b);
+                break;
+            default:
+                System.out.println("Invalid Operator");
+                break;
+        }  
+    }
+}
+========================================================================================
+    
 
 
 
