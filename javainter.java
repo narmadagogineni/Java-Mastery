@@ -1,6 +1,6 @@
 //LOOPS
 
-//while loop
+//WHILE LOOP
 
 import java.util.*;
 
@@ -82,6 +82,89 @@ public class javabasics {
     }
 }
 --------------------------------------------------------
+STAR PATTERN
+
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String[] args) {
+        
+        int i = 1;
+        while(i<=4) {
+            System.out.println("* * * *");
+            i++;
+        }
+    }
+}
+-----------------------------------------------------------
+//SUM OF NUMBERS IN GIVEN RANGE
+    
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a value for n");
+        int n = sc.nextInt();       
+        int sum = 0;
+
+        int i = 1; 
+        while(i <= n) {
+            sum += i;
+            i++;            
+        }
+        System.out.println("Sum is : " + sum); 
+    }
+}
+====================================================================================
+    //FOR LOOP
+
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+
+        for(int i=1; i<=n; i++) {
+            sum += i;
+        }
+        System.out.println(sum);
+    }
+}
+-----------------------------------------------------------
+// HELLO WORLD 5 TIMES USING FOR LOOP
+    
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String args[]) {
+        
+        for(int i=1; i<=5; i++) {
+            System.out.println("Hello World!");
+        }
+        
+    }
+}
+-------------------------------------------------------
+//STAR PATTERN USING FOR LOOP
+    
+import java.util.*;
+
+public class javabasics {
+
+    public static void main(String[] args) {
+        
+        for(int i=1; i<=4; i++) {
+            System.out.println("* * * *");
+        }
+    }
+}
 
 
 
