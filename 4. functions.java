@@ -210,11 +210,50 @@ public class functions {
         System.out.println(binCoeff(5, 2));
     }
 }
+-------------------------------------------------------------------------------------------
+//Method overloading
+    // * using parameters
+    
+ import java.util.*;
 
+public class functions {
+    //sum of 2 num
+    public static int sum(int a, int b) {
+       return a + b;
+    }
+    //sum of 3 num
+    public static int sum(int a, int b, int c) {
+        return a + b + c;
+    }
 
+    public static void main(String[] args) {
+        System.out.println(sum(5, 2));
+        System.out.println(sum(5, 2, 1));
+    }
+}
 
+------------------------------------------------------------------------------------------
+//method overloading
+    //*using datatypes
 
+import java.util.*;
 
+public class functions {
+    //sum of 2 num
+    public static int sum(int a, int b) {
+       return a + b;
+    }
+    //sum of 3 num
+    public static float sum(float a, float b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sum(5, 2));
+        System.out.println(sum(5.2f, 2.8f));
+    }
+}
+------------------------------------------------------------------------
 
 
 
