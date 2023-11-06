@@ -83,7 +83,61 @@ public class patterns {
         
     }
 }
+================================================================================
 
+
+import java.util.*;
+
+public class functions {
+
+    public static void decToBin(int decNum) {
+        int myNum = decNum;
+        int power = 0;
+        int binNum = 0;
+
+        while (decNum > 0) {
+            int rem = decNum % 2;
+            binNum = binNum + (rem * (int) Math.pow(10, power));
+            
+            power++;
+            decNum = decNum / 2;
+        }
+        System.out.println("binary of "+ myNum + " is " + binNum);
+    }
+
+    public static void main(String args[]) {
+        decToBin(11);
+    }
+}
+
+============================================================================================
+
+import java.util.*;
+
+public class functions {
+                //matrix application
+    public static void hallowRectangle(int totRows, int totCols) {
+        //outer loop - rows - i - horizontal
+        for(int i=1; i<=totRows; i++) {
+            //inner loop - columns - j - vertical
+            for(int j=1; j<=totCols; j++) {
+                // cell - (i, j)
+                if(i == 1 || i == totRows || j == 1 || j == totCols) {
+                    //boundary cells
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+
+            System.out.println();
+        }
+    }
+
+    public static void main(String args[]) {
+        hallowRectangle(4, 5);
+    }
+}
 
 
 
