@@ -117,6 +117,169 @@ public class JavaMastery {
     }
 }
 =====================================================================
-ex 2
+//Get largest number in an array
+
+import java.util.*;
+
+public class JavaMastery {
+
+    public static int getLargest(int numbers[]) {
+        int largest = Integer.MIN_VALUE; // negative or -Infinity
+
+        for(int i=0; i<numbers.length; i++) {
+            if(largest < numbers[i]) {
+                largest = numbers[i];
+            }
+        }
+
+        return largest;
+    }
+    public static void main(String args[]) {
+        int numbers[] = {2, 4, 19, 10, 9};
+        int result = getLargest(numbers);
+        System.out.println("The largest number in the array is " + result);
+    }
+}
+====================================================================================================================
+    //GET LARGEST AND SMALLEST NUMBER IN AN ARRAY
+
+import java.util.*;
+
+public class JavaMastery {
+
+    public static int getLargestAndSmallest(int numbers[]) {
+        int largest = Integer.MIN_VALUE; // negative or -Infinity
+        int smallest = Integer.MAX_VALUE; // positive or Infinity
+
+        for(int i=0; i<numbers.length; i++) {
+            if(largest < numbers[i]) {
+                largest = numbers[i];
+            }
+
+            if(smallest > numbers[i]) {
+                smallest = numbers[i];
+            }
+        }
+
+        System.out.println("Smallest number is " + smallest);
+        return largest;
+    }
+    public static void main(String args[]) {
+        int numbers[] = {2, 4, 19, 10, 9};
+        int result = getLargestAndSmallest(numbers);
+        System.out.println("The largest number in the array is " + result);
+    }
+}
+=======================================================================================================================
+
+//Binary Search
+//pre-requisite - only performed on sorted arrays
+    //USING WHILE LOOP
+import java.util.*;
+
+public class JavaMastery {
+    //binary search
+    public static int binarySearch(int numbers[], int key) {
+        int start = 0;
+        int end = numbers.length - 1;
+
+        while (start <= end) {
+            int mid = (start + end) / 2; 
+
+            //comparison
+            if(numbers[mid] == key) {     //found
+                return mid;
+            } else if(numbers[mid] < key) {  //towards right
+                start = mid+1;
+            } else {           //left
+                end = mid-1;
+            }
+        }
+
+        return -1;
+    }
+    
+    public static void main(String args[]) {
+        int numbers[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        int key = 14;
+
+        System.out.println("Index key is found at : " + binarySearch(numbers, key));
+    }
+}
+
+==================================================================================================
+
+//Binary Search - for loop
+//pre-requisite - only performed on sorted arrays
+    //FOR LOOP
+    
+import java.util.*;
+
+public class JavaMastery {
+    //binary search
+    public static int binarySearch(int numbers[], int key) {
+        int start = 0;
+        int end = numbers.length - 1;
+
+        for(int i=0; i<=numbers.length; i++) {
+            int mid = (start + end) / 2; 
+
+            //comparison
+            if(numbers[mid] == key) {     //found
+                return mid;
+            } else if(numbers[mid] < key) {  //towards right
+                start = mid+1;
+            } else {           //left
+                end = mid-1;
+            }
+        }
+
+        return -1;
+    }
+    
+    public static void main(String args[]) {
+        int numbers[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        int key = 34;
+
+        System.out.println("Index key is found at : " + binarySearch(numbers, key));
+    }
+}
+===================================================================================================================
+
+//Reverse an Array
+import java.util.*;
+
+public class JavaMastery {
+
+    public static void reverse(int numbers[]) {
+        int first = 0, last = numbers.length - 1;
+        
+        while (first < last) {
+            
+            //swap
+            int temp = numbers[last];
+            numbers[last] = numbers[first];
+            numbers[first] = temp;
+
+            first++;   // // left index moves forward or increase by 1
+            last--;     // // right index decrease by 1 or moves towrds left
+        }
+
+    }
+
+    public static void main(String args[]) {
+        int numbers[] = {2, 3, 4, 5, 6, 9, 7};
+        
+        reverse(numbers);
+        //to print 
+        for(int i=0; i<numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+        System.out.println();
+    }
+}
+
+
+
 
     
