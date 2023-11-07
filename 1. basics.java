@@ -169,7 +169,18 @@ byte -> short -> int -> float -> long -> double
 
 ======================================================================================
     //TYPE CONVERSION = WIDENING CONVERSION
+//converting int to float to prevent data loss
 
+public class JavaMastery {
+    public static void main(String[] args) {
+        int a = 3;
+        int b = 2;
+        float c = (float) a/b;
+        System.out.println(c);
+    }
+}
+===================================================================================
+    
 import java.util.*;
 
 public class javabasics {
