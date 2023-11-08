@@ -41,3 +41,77 @@ public class stringstut {
     }
 }
 
+===================================================================================================
+//LENGTH OF A STRING
+
+import java.util.*;
+
+public class stringstut {
+    
+    public static void main(String[] args) {
+        String fullName = "Narmada Gogineni";
+        System.out.println(fullName.length());
+
+    }
+}
+==========================================================================
+
+    //CONCATENATION IN STRINGS
+
+    import java.util.*;
+
+public class stringstut {
+    
+    public static void main(String[] args) {
+        String firstname = "Narmada";
+        String lastName = "Gogineni";
+        String fullName = firstname + " " + lastName;
+        System.out.println(fullName);
+
+    }
+}
+==========================================================================================
+
+    //charAt in strings
+
+import java.util.*;
+
+public class stringstut {
+    
+    public static void main(String[] args) {
+        String fullName = "Narmada Gogineni";
+        System.out.println(fullName.charAt(0));
+        System.out.println(fullName.charAt(5));
+        System.out.println(fullName.charAt(15));
+
+    }
+}
+
+===========================================================================================
+
+    //To print each letter in a string
+
+import java.util.*;
+
+public class stringstut {
+
+    public static void printLetters(String name) {
+        for(int i=0; i<name.length(); i++) {
+            System.out.print(name.charAt(i) + " ");
+        }
+
+        System.out.println();
+    }
+    
+    public static void main(String[] args) {
+        String name = "Narmada Gogineni";
+        printLetters(name);
+
+    }
+}
+=====================================================================================
+    
+
+
+
+    
