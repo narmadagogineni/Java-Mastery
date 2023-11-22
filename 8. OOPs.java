@@ -148,3 +148,284 @@ class Pen {
         this.tip = tip;
     }
 }
+================================================================================================
+
+    //CONSTRUCTOR
+    
+public class Oops {
+    
+    public static void main(String args[]) {
+       Student s1 = new Student();     //defining constructor
+    }
+}
+
+class Student{            
+    String name;
+    int rollno;
+
+    Student() {       //calling constructor
+        System.out.println("Hey Narmada, Constructor is being called..");
+    }
+}
+==============================================================================================
+
+    //CONSTRUCTOR WITH ARGUMENTS         
+    
+public class Oops {
+    
+    public static void main(String args[]) {
+       Student s1 = new Student("Narmada");
+       System.out.println(s1.name);
+    }
+}
+
+class Student{
+    String name;
+    int rollno;
+
+    Student(String name) {
+        this.name = name;
+    }
+}
+===============================================================================================
+//3 TYPES OF CONSTRUCTOR
+    //PARAMETERIZED , NON-PARAMETERIZED, COPY CONSTRUCTOR
+
+public class Oops {
+    
+    public static void main(String args[]) {
+       Student s1 = new Student();  //non parameterized constructor
+       Student s2 = new Student("Narmada");
+       System.out.println(s2.name);    //parameterized constructor
+       Student s3 = new Student(373);
+       System.out.println(s3.rollno);
+    }
+}
+
+class Student{
+    String name;
+    int rollno;
+
+    Student() {
+        System.out.println("Hey Narmada, Constructor is being called..");
+    }
+
+    Student(String name) {
+        this.name = name;
+    }
+
+    Student(int rollno) {
+        this.rollno = rollno;
+    }
+
+}
+
+
+============================================================================================
+
+    //INHERITANCE
+
+    //SINGLE-LEVEL INHERITANCE
+
+public class Oops {
+    
+    public static void main(String args[]) {
+       Fish shark = new Fish();
+       shark.eat();
+    }
+}
+
+//Base class
+class Animal {
+    String color;  //property
+
+    void eat() {
+        System.out.println("Eating");
+    }
+
+    void breathe() {
+        System.out.println("Breathing");
+    }
+}
+
+//Derived class
+class Fish extends Animal {
+    int fins;
+
+    void swim() {
+        System.out.println("Swimming in water");
+    }
+}
+
+============================================================================================
+
+    //MULTI-LEVEL INHERITANCE
+
+public class Oops {
+    
+    public static void main(String args[]) {
+       Dogs melo = new Dogs();
+       melo.barks();
+       melo.legs = 4;
+       System.out.println(melo.legs);
+    }
+}
+
+//Base class
+class Animal {
+    String color;  //property
+
+    void eat() {
+        System.out.println("Eating");
+    }
+
+    void breathe() {
+        System.out.println("Breathing");
+    }
+}
+
+//Derived class
+class Mammal extends Animal {
+    int legs;
+
+    void walks() {
+        System.out.println("going for a walk");
+    }
+}
+
+class Dogs extends Mammal {
+    int barks;
+
+    void barks() {
+        System.out.println("barks");
+    }
+
+}
+
+============================================================================================
+
+//HIERARCHIAL INHERITANCE
+
+public class Oops {
+    
+    public static void main(String args[]) {
+       Mammal sizu = new Mammal();
+       sizu.eat();
+    }
+}
+
+//Base class
+class Animal {
+    String color;  //property
+
+    void eat() {
+        System.out.println("Eating");
+    }
+
+    void breathe() {
+        System.out.println("Breathing");
+    }
+}
+
+//Derived class
+class Mammal extends Animal {
+    int legs;
+
+    void walks() {
+        System.out.println("Walks");
+    }
+}
+
+class Fish extends Animal {
+    void swims() {
+        System.out.println("Swims");
+    }
+
+}
+
+class Bird extends Animal {
+    void flys() {
+        System.out.println("Flying");
+    }
+
+}
+ ==================================================================================
+     //Hybrid inheritanc 
+
+     
+     
+==================================================================================
+
+     //POLYMORPHISM
+
+     //Complile time polymorphism or static
+
+     //ex for METHOD-OVERLOADING
+
+ public class Oops {
+    
+    public static void main(String args[]) {
+       Calculator calc = new Calculator();
+       System.out.println(calc.sum(1, 2));
+       System.out.println(calc.sum((float)1.5, (float)2.5));
+       System.out.println(calc.sum(1, 2, 3));
+    }
+}
+
+class Calculator {
+    int sum(int a, int b) {
+        return a + b;
+    }
+
+    float sum(float a, float b) {
+        return a + b;
+    }
+
+    int sum(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+==================================================================================
+
+//Run-time polymorphidm or dynamic
+    
+//METGOD-OVERRIDING
+    
+public class Oops {
+    
+    public static void main(String args[]) {
+       Deer d = new Deer();
+       d.eat();
+    }
+}
+
+class Animal {
+    void eat() {
+        System.out.println("eats anything");
+    }
+}
+class Deer extends Animal {
+    void eat() {
+        System.out.println("eats grass");
+    }
+}
+
+==================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
