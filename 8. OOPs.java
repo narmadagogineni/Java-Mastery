@@ -413,7 +413,215 @@ class Deer extends Animal {
 
 ==================================================================================
 
+//ABSTRACTION
 
+// abstract class can have both normal and abstract method
+    
+import java.util.Scanner;
+
+import java.util.*;
+
+public class Oops {
+
+    public static void main(String args[]) {
+        Horse h = new Horse();
+        h.eat();
+        h.walk();
+
+        Chicken c = new Chicken();
+        c.eat();
+        c.walk();
+    }
+}
+
+abstract class Animal {               //abstract class
+    void eat() {            //normal method
+        System.out.println("Animal eats");
+    }
+    
+    abstract void walk();       //abstract method
+}
+
+class Horse extends Animal {
+    void walk() {
+        System.out.println("Walks on 4 legs");
+    }
+}
+
+class Chicken extends Animal {
+    void walk() {
+        System.out.println("Walks on 2 legs");
+    }
+}
+========================================================================================
+    //How abstraction uses constructor
+
+import java.util.Scanner;
+
+import java.util.*;
+
+public class Oops {
+
+    public static void main(String args[]) {
+        Horse h = new Horse();
+        h.eat();
+        h.walk();
+        System.out.println(h.color);
+        h.changeColor();   //change color method
+        System.out.println("The color is changed to " + h.color);
+
+        Chicken c = new Chicken();
+        
+    }
+}
+
+abstract class Animal {
+    String color;
+
+    Animal() {
+        color = "brown";
+    }
+    void eat() {            
+        System.out.println("Animal eats");
+    }
+    
+    abstract void walk();       
+}
+
+class Horse extends Animal {
+    void changeColor() {
+        color = "white";
+    }
+    void walk() {
+        System.out.println("Walks on 4 legs");
+    }
+}
+
+class Chicken extends Animal {
+    void changeColor() {
+        color = "yellow";
+    }
+    void walk() {
+        System.out.println("Walks on 2 legs");
+    }
+}
+========================================================================================
+    //Constructor in asbraction class , heirarchically calling constructor
+
+import java.util.Scanner;
+
+import java.util.*;
+
+public class Oops {
+
+    public static void main(String args[]) {
+        Mustang myHorse = new Mustang();
+        
+    }
+}
+
+abstract class Animal {
+    String color;
+
+    Animal() {
+        System.out.println("Animal constructor is being called");
+    }
+    void eat() {            
+        System.out.println("Animal eats");
+    }
+    
+    abstract void walk();       
+}
+
+class Horse extends Animal {
+    Horse() {
+        System.out.println("Horse constructor is being called");
+    }
+
+    void changeColor() {
+        color = "white";
+    }
+    void walk() {
+        System.out.println("Walks on 4 legs");
+    }
+}
+
+class Mustang extends Horse {
+    Mustang() {
+        System.out.println("Mustang constructor is called");
+    }
+}
+
+class Chicken extends Animal {
+    
+    void changeColor() {
+        color = "yellow";
+    }
+    void walk() {
+        System.out.println("Walks on 2 legs");
+    }
+}
+
+======================================================================================
+    //INTERFACES
+
+    // DEFN - INTERFACE is a blueprint of class, and Class is a blueprint of objects
+
+
+public class Oops {
+
+    public static void main(String args[]) {
+        Queen q = new Queen();
+        q.moves();
+    }
+}
+
+interface ChessPlayer {
+    void moves();
+}
+
+class Queen implements ChessPlayer {
+    public void moves() {
+        System.out.println("Queen can move in any direction and diagonally too");
+    }
+}
+
+class Rook implements ChessPlayer {
+    public void moves() {
+        System.out.println("Rook can move in 4 directions");
+    }
+}
+
+class King implements ChessPlayer {
+    public void moves() {
+        System.out.println("King can move in 4 directions and diagonally by 1 step");
+    }
+}
+
+================================================================================================
+    //Interfaces support Multiple inheritance
+
+ public class Oops {
+
+    public static void main(String args[]) {
+        Bear b = new Bear();
+        b.eats();
+    }
+}
+
+interface Herbivore {
+    void eats();
+}
+
+interface Carnivore {
+    void eats();
+}
+
+class Bear implements Herbivore, Carnivore {
+    public void eats() {
+        System.out.println("Eats both meat and plants");
+    }
+}
 
 
 
