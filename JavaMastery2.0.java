@@ -115,3 +115,27 @@ public class JavaMastery {
     //note: printf n format are similar
   
 ==========================================================================================================================
+public class JavaMastery {
+
+    public static void main(String args[]) {
+        int a = 5;
+        float b = 7.939f;
+
+        //gives 3 spaces for %d i.e 5
+        System.out.format("The value of a is %3d and b is %f", a , b);
+
+        //gives 8 spaces and removed extra digits keeping only 2 digits after decimal point
+        System.out.println();
+        System.out.format("The value of a is %d and b is %8.2f", a , b);
+    }
+}
+  //note 
+// Q : 
+    // What is %03d in Java?
+    
+// A:  
+//     You just need to add "%03d" to add 3 leading zeros in an Integer.
+//     Formatting instruction to String starts with "%" and 0 is the character which is used in padding.
+//     By default left padding is used, 3 is the size and d is used to print integers.
+    
+
