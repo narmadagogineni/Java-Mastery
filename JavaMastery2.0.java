@@ -207,7 +207,27 @@ public class JavaMastery {
 }
 ===================================================================================================================
 
-    //
+    //Enhanced switch
+
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        String name = "joe";
+
+        switch (name) {
+            case "melo" -> {
+                System.out.println("This is 1");
+                System.out.println("This is 2");
+                System.out.println("This is 3");
+            }
+            case "maxi" -> System.out.println("this is 4");
+            case "nick" -> System.out.println("This is 5");
+            case "joe" -> System.out.println("This is 6");
+            default -> System.out.println("This is last one");
+        }
+        System.out.println("Done with switch");
+    }
+}
     
 ===================================================================================================================
 ===================================================================================================================
