@@ -137,5 +137,82 @@ public class JavaMastery {
 //     You just need to add "%03d" to add 3 leading zeros in an Integer.
 //     Formatting instruction to String starts with "%" and 0 is the character which is used in padding.
 //     By default left padding is used, 3 is the size and d is used to print integers.
-    
+===================================================================================================================
 
+    //if else ladder
+
+import java.util.Scanner;
+
+public class JavaMastery {
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        int age;
+        System.out.println("Enter your age: ");
+        age = sc.nextInt();
+
+        if(age > 56) {
+            System.out.println("Experienced");
+        }
+        else if(age > 46) {
+            System.out.println("Semi-Experienced");
+        }
+        else if(age > 36) {
+            System.out.println("little Experienced");
+        }
+        else if(age > 26) {
+            System.out.println("Not very Experienced");
+        } 
+        else{
+            System.out.println("Fresher");
+        }
+    }
+
+}
+===================================================================================================================
+
+    //switch statements
+
+import java.text.BreakIterator;
+import java.util.Scanner;
+
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int age;
+        System.out.println("Enter your age: ");
+        age = sc.nextInt();
+
+        switch (age) {
+            case 18:
+                System.out.println("Your are going to be an adult");
+                break;
+            case 22:
+                System.out.println("Got a job");
+                break;
+            case 24:
+                System.out.println("Got a hike");
+                break;
+            case 26:
+                System.out.println("Got a promotion");
+                break;
+            default:
+                System.out.println("Enjoying the life");
+                break;
+        }
+    }
+}
+===================================================================================================================
+
+    //
+    
+===================================================================================================================
+===================================================================================================================
+===================================================================================================================
+===================================================================================================================
+===================================================================================================================
+===================================================================================================================
+===================================================================================================================
