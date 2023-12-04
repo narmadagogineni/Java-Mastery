@@ -25,6 +25,7 @@ public class JavaMastery {
 }
 
 ======================================================================================================
+    
 // sum of 3 num
   
 import java.util.*;
@@ -57,6 +58,7 @@ public class JavaMastery {
     }
 }
 ============================================================================================
+    
 //Greet a name
 
 import java.util.*;
@@ -72,6 +74,7 @@ public class JavaMastery {
     }
 }
 ============================================================================================
+    
 //km to miles
   
 import java.util.*;
@@ -88,6 +91,7 @@ public class JavaMastery {
     }
 }
 ============================================================================================
+
 //given num is int or not
 
 import java.util.*;
@@ -101,4 +105,98 @@ public class JavaMastery {
         System.out.println(sc.hasNextInt());
     }
 }
-============================================================================================
+==================================================================================================
+
+    //ESCAPE SEQUENCE CHARACTERS
+
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        
+        System.out.println("Hi, my name is \"Narmada\" ");
+        System.out.println("Hi, my name is 'Narmada' ");
+        System.out.println("Hi, my name is \' only one quote ");
+        System.out.println("Hey, I'm using escape sequence for slash \\ here");
+        System.out.println("Hey, for tab \t here");
+        System.out.println("Hey, for next tine \n here");
+    }
+}
+
+==================================================================================================
+
+    //Convert to lowercase()
+
+    public class JavaMastery {
+
+    public static void main(String args[]) {
+        String name = "Narmada Gogineni";
+        name = name.toLowerCase();
+        System.out.println(name);
+    }
+}
+==================================================================================================
+    
+    //replace 
+    
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        
+        String text = "narmada gogineni insta";
+        // System.out.println(text);
+        text = text.replace(" ", "_");
+        System.out.println(text);
+
+    }
+}
+
+==================================================================================================
+    
+    //letter format 
+    
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        
+        String letter = "Dear <|name|>, Thanks a lot!";
+        letter = letter.replace("<|name|>", "Narmada Gogineni");
+        System.out.println(letter);
+    }
+}
+==================================================================================================
+    
+//check if double and triple spaces exists in given string
+
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        String str = "Hello  World   This is Narmada Gogineni.";
+        System.out.println(str.indexOf("   "));   //present at index 12
+        System.out.println(str.indexOf("  "));
+    }
+}
+
+//case 2----------------------------------------
+
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        String str = "Hello World  This is Narmada Gogineni.";
+        System.out.println(str.indexOf("   "));   //triple space doesnt exists so prints -1
+        System.out.println(str.indexOf("  "));
+    }
+}
+==================================================================================================
+
+//format a letter using escape sequence
+
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        String letter = "Hello, Miss Narmada Gogineni, \n\tHope you had a great day today. \nThanks!";
+        System.out.println(letter);
+    }
+}
+==================================================================================================
+
+    
