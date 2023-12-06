@@ -199,4 +199,170 @@ public class JavaMastery {
 }
 ==================================================================================================
 
+    //if else
     
+public class JavaMastery {
+
+    public static void main(String args[]) {
+
+        int a = 10;
+        if(a == 11) {
+            System.out.println("I am 11");
+        }
+        else {
+            System.out.println("I'm not 11");
+        }
+    }
+}
+
+==================================================================================================
+
+    // pass or fail
+
+import java.util.Scanner;
+
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter sub 1 marks");
+        int marks1 = sc.nextInt();
+        System.out.println("Enter sub 2 marks");
+        int marks2 = sc.nextInt();
+        System.out.println("Enter sub 3 marks");
+        int marks3 = sc.nextInt();
+        float avg = (marks1 + marks2 + marks3) / 3.0f;
+        System.out.println("Your overall percentage is " + avg + "%");
+
+        if((marks1 >= 33) && (marks2 >= 33) && (marks3 >= 33) && (avg >= 40)) {
+            System.out.println("Pass");
+        } else {
+            System.out.println("Fail");
+        }
+    }
+}
+
+
+==================================================================================================
+
+    //tax on salary
+
+import java.util.Scanner;
+
+public class JavaMastery {
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        float salary;
+        System.out.print("Enter your salary: ");
+        salary = sc.nextFloat();
+        
+        if(salary < 250000) {
+            System.out.println("No tax to be paid");
+        }
+        else if(salary >= 250000 && salary < 500000) {
+            System.out.println("Tax is 5%");
+        }
+        else if(salary > 500000 && salary < 1000000) {
+            System.out.println("tax is 10%");
+        }
+        else if(salary > 1000000) {
+            System.out.println("Tax is 15%");
+        }
+    }
+}
+
+==================================================================================================
+
+//days using switch
+    
+public class JavaMastery {
+
+    public static void main(String args[]) {
+
+        int day = 1;
+        switch (day) {
+            case 1:
+                System.out.println("Sunday");
+                break;
+            case 2:
+                System.out.println("Monday");
+                break;
+            case 3:
+                System.out.println("Tuesday");
+                break;
+            case 4:
+                System.out.println("Wednesday");
+                break;
+            case 5:
+                System.out.println("Thursday");
+                break;
+            case 6:
+                System.out.println("Friday");
+                break;
+            case 7:
+                System.out.println("Saturday");
+                break;
+        
+            default:
+            System.out.println("No such day exists");
+                break;
+        }
+    }
+}
+
+==================================================================================================
+
+    //leap year or not
+
+import java.util.Scanner;
+
+public class JavaMastery {
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter any year: ");
+        int year = sc.nextInt();
+
+        if((year % 400 == 0) || ((year % 100 != 0) && (year % 4 == 0)) ) {
+            System.out.println("Leap year");
+        } else {
+            System.out.println("Not a leap year");
+        }
+    }
+}
+==================================================================================================
+
+// find type of website using url
+
+//.in - indian website
+// .org - organizational website
+//.com - commercial website
+
+import java.util.Scanner;
+
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter an url: ");
+        String url = sc.next();
+
+        if(url.endsWith(".org")) {
+            System.out.println("THis is an oragnizational website");
+        }    
+        else if(url.endsWith(".com")) {
+            System.out.println("This is an commercial website");
+        } 
+        else if(url.endsWith(".in")) {
+            System.out.println("This is an indian website");
+        }
+        else {
+            System.out.println("Not a valid url");
+        }
+    }
+}
+==================================================================================================
