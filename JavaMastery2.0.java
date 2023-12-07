@@ -230,9 +230,117 @@ public class JavaMastery {
 }
     
 ===================================================================================================================
+
+//WHILE LOOP
+    
+    public class JavaMastery {
+
+    public static void main(String args[]) {
+        int i=1;
+        while(i <= 10) {
+            System.out.println(i);
+            i++;
+        }
+        System.out.println("Finished using while loop");
+    }
+}
+---------------------------------------------------------------------
+
+//INFINTIE WHILE LOOP
+    
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        while(true) {
+            System.out.println("Running an infinite loop");
+        }  
+    }
+}
+
 ===================================================================================================================
+    
+//print 100 to 200 using while loop
+    
+    public class JavaMastery {
+
+    public static void main(String args[]) {
+        int i = 100;
+        while (i <= 200) {
+            System.out.println(i);
+            i++;
+        }
+    }
+}
 ===================================================================================================================
+
+    //do-while loop
+
+public class JavaMastery {
+
+    public static void main(String args[]) {
+        int i = 0;
+        do {
+            System.out.println(i);
+            i++;
+        } while(i <= 5);
+    }
+}
+
 ===================================================================================================================
+
+    //comparing while with do-while loop
+
+    public class JavaMastery {
+
+    public static void main(String args[]) {
+        //while vs do-while
+
+        //while 
+        System.out.println("This is while loop");
+        int a = 1;
+        while(a <= 5) {
+            System.out.println(a);
+            a++;
+        }
+        System.out.println("While loop has ended");
+
+        //do-while loop
+        System.out.println("This is Do-while loop");
+        int b = 1;
+        do {
+            System.out.println(b);
+            b++;
+        } while (b <= 5);
+        System.out.println("Do-while loop has ended");
+        
+    }
+}
+===================================================================================================================
+
+    //CHECKING EXECUTIONS OF DO AND WHILE IN FEW CONDITIONS
+    
+public class JavaMastery {
+
+    public static void main(String args[]) {
+ 
+        // in while - checks cond first and enters loop
+        // so it doesnt print anything
+        int j = 10;
+        while(j <= 5) {
+            System.out.println(j);
+            j++;
+        }
+
+        //in do while - it enters loop first without checking cond 
+        //and prints sometimes {here it prints variable i which is 10}
+        int i = 10;
+        do {
+            System.out.println(i);
+            i++;
+        } while(i <= 5);
+    }
+}
+
 ===================================================================================================================
 ===================================================================================================================
 ===================================================================================================================
