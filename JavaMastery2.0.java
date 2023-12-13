@@ -373,8 +373,65 @@ public class JavaMastery {
 
 
 ===================================================================================================================
+    //Break in for loop
+
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        for(int i=0; i<5; i++) {
+            System.out.println(i);
+            System.out.println("Java is interesting");
+            if(i==2) {
+                System.out.println("Im breaking the loop");
+                break;
+            }
+
+        }
+        System.out.println("loop ended");
+    }
+}
 ===================================================================================================================
+    //break in while loop
+
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        int i=0;
+
+        while (i<5) {
+            System.out.println(i);
+            System.out.println("Java is Great");
+            if(i==2) {
+                System.out.println("Im breaking the loop");
+                break;
+            }
+            i++;
+        } 
+        System.out.println("loop ended");
+    }
+}
 ===================================================================================================================
+    //break in do-while loop
+
+public class JavaMastery {
+
+    public static void main(String[] args) {
+        int i=0;
+
+        do {
+            System.out.println(i);
+            System.out.println("Java Coding");
+            if(i==2) {
+                System.out.println("Im breaking the loop");
+                break;
+            } 
+            i++;
+            
+        } while (i<5);
+                System.out.println("loop ended");
+        
+    }
+}
 ===================================================================================================================
 ===================================================================================================================
 ===================================================================================================================
